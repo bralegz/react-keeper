@@ -72,7 +72,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="wrap">
       <Header />
       <CreateArea
         addNote={addNote}
@@ -83,17 +83,19 @@ function App() {
       {emptyField && (
         <p className="validation">You must enter a title and a note</p>
       )}
-      {allNotes.map((note, index) => {
-        return (
-          <Note
-            key={index}
-            id={index}
-            deleteItem={deleteItem}
-            title={note.title}
-            content={note.content}
-          />
-        );
-      })}
+      <div className="container">
+        {allNotes.map((note, index) => {
+          return (
+            <Note
+              key={index}
+              id={index}
+              deleteItem={deleteItem}
+              title={note.title}
+              content={note.content}
+            />
+          );
+        })}
+      </div>
       <Footer />
     </div>
   );
