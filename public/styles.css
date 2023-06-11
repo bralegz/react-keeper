@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background: #eee;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  padding: 0 1.6rem;
+}
+
+header {
+  background-color: #33b2ff;
+  margin: auto -1.6rem;
+  padding: 1.6rem 3.2rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: 'McLaren', cursive;
+  font-size: 2.3rem;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.2rem 0.5rem #ccc;
+  padding: 1rem;
+  min-width: 25rem;
+  max-width: 35rem;
+  margin: 1.6rem;
+  float: left;
+}
+.note h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+.note p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 1rem;
+  color: #33b2ff;
+  border: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 48rem;
+  margin: 3rem auto 2rem auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.1rem 0.5rem rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 0.4rem;
+  outline: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-note button {
+  position: absolute;
+  right: 1.8rem;
+  bottom: -1.8rem;
+  background: #33b2ff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 3.6rem;
+  height: 3.6rem;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.validation {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+.remove:hover {
+  background-color: #e6e6e6;
+}
+
+.MuiSvgIcon-root {
+  width: 2.2rem !important;
+  height: 2.2rem !important;
+}
+
+#input-field {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
