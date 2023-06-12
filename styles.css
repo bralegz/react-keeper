@@ -142,7 +142,7 @@ form.create-note button {
   }
 
   .footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     display: block;
     text-align: center;
